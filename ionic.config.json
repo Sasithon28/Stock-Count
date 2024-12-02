@@ -1,0 +1,7 @@
+{
+  "name": "StockCount",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

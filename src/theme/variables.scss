@@ -1,0 +1,135 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+
+//สีส่วนหัวแอป
+:root {
+	--ion-color-h1: #858484;
+	--ion-color-h1-rgb: 133,132,132;
+	--ion-color-h1-contrast: #000000;
+	--ion-color-h1-contrast-rgb: 0,0,0;
+	--ion-color-h1-shade: #757474;
+	--ion-color-h1-tint: #919090;
+}
+
+.ion-color-h1 {
+	--ion-color-base: var(--ion-color-h1);
+	--ion-color-base-rgb: var(--ion-color-h1-rgb);
+	--ion-color-contrast: var(--ion-color-h1-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-h1-contrast-rgb);
+	--ion-color-shade: var(--ion-color-h1-shade);
+	--ion-color-tint: var(--ion-color-h1-tint);
+}
+
+//สีปุ่ม1
+:root {
+	--ion-color-b1: #B0A897;
+	--ion-color-b1-rgb: 176,168,151;
+	--ion-color-b1-contrast: #000000;
+	--ion-color-b1-contrast-rgb: 0,0,0;
+	--ion-color-b1-shade: #9b9485;
+	--ion-color-b1-tint: #b8b1a1;
+}
+
+.ion-color-b1 {
+	--ion-color-base: var(--ion-color-b1);
+	--ion-color-base-rgb: var(--ion-color-b1-rgb);
+	--ion-color-contrast: var(--ion-color-b1-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-b1-contrast-rgb);
+	--ion-color-shade: var(--ion-color-b1-shade);
+	--ion-color-tint: var(--ion-color-b1-tint);
+}
+
+//สีขาว
+:root {
+	--ion-color-www: #ffffff;
+	--ion-color-www-rgb: 255,255,255;
+	--ion-color-www-contrast: #000000;
+	--ion-color-www-contrast-rgb: 0,0,0;
+	--ion-color-www-shade: #e0e0e0;
+	--ion-color-www-tint: #ffffff;
+}
+
+.ion-color-www {
+	--ion-color-base: var(--ion-color-www);
+	--ion-color-base-rgb: var(--ion-color-www-rgb);
+	--ion-color-contrast: var(--ion-color-www-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-www-contrast-rgb);
+	--ion-color-shade: var(--ion-color-www-shade);
+	--ion-color-tint: var(--ion-color-www-tint);
+}
+
+//สีปุ่มยืนยัน
+:root {
+	--ion-color-yes: #2DC958;
+	--ion-color-yes-rgb: 45,201,88;
+	--ion-color-yes-contrast: #000000;
+	--ion-color-yes-contrast-rgb: 0,0,0;
+	--ion-color-yes-shade: #28b14d;
+	--ion-color-yes-tint: #42ce69;
+}
+
+.ion-color-yes {
+	--ion-color-base: var(--ion-color-yes);
+	--ion-color-base-rgb: var(--ion-color-yes-rgb);
+	--ion-color-contrast: var(--ion-color-yes-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-yes-contrast-rgb);
+	--ion-color-shade: var(--ion-color-yes-shade);
+	--ion-color-tint: var(--ion-color-yes-tint);
+}
+
+//สีปุ่มกลับไปหน้าโฮม
+:root {
+	--ion-color-yyy: #FFDE59;
+	--ion-color-yyy-rgb: 255,222,89;
+	--ion-color-yyy-contrast: #000000;
+	--ion-color-yyy-contrast-rgb: 0,0,0;
+	--ion-color-yyy-shade: #e0c34e;
+	--ion-color-yyy-tint: #ffe16a;
+}
+
+.ion-color-yyy {
+	--ion-color-base: var(--ion-color-yyy);
+	--ion-color-base-rgb: var(--ion-color-yyy-rgb);
+	--ion-color-contrast: var(--ion-color-yyy-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-yyy-contrast-rgb);
+	--ion-color-shade: var(--ion-color-yyy-shade);
+	--ion-color-tint: var(--ion-color-yyy-tint);
+}
+
+//สีพื้นหลังเมนู
+:root {
+	--ion-color-b2: #D9D9D9;
+	--ion-color-b2-rgb: 217,217,217;
+	--ion-color-b2-contrast: #000000;
+	--ion-color-b2-contrast-rgb: 0,0,0;
+	--ion-color-b2-shade: #bfbfbf;
+	--ion-color-b2-tint: #dddddd;
+}
+
+.ion-color-b2 {
+	--ion-color-base: var(--ion-color-b2);
+	--ion-color-base-rgb: var(--ion-color-b2-rgb);
+	--ion-color-contrast: var(--ion-color-b2-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-b2-contrast-rgb);
+	--ion-color-shade: var(--ion-color-b2-shade);
+	--ion-color-tint: var(--ion-color-b2-tint);
+}
+
+//สีผลลัพธ์
+:root {
+	--ion-color-re: #D4CCBA;
+	--ion-color-re-rgb: 212,204,186;
+	--ion-color-re-contrast: #000000;
+	--ion-color-re-contrast-rgb: 0,0,0;
+	--ion-color-re-shade: #bbb4a4;
+	--ion-color-re-tint: #d8d1c1;
+}
+
+.ion-color-re {
+	--ion-color-base: var(--ion-color-re);
+	--ion-color-base-rgb: var(--ion-color-re-rgb);
+	--ion-color-contrast: var(--ion-color-re-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-re-contrast-rgb);
+	--ion-color-shade: var(--ion-color-re-shade);
+	--ion-color-tint: var(--ion-color-re-tint);
+}

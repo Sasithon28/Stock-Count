@@ -1,0 +1,36 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="h1">
+      <ion-title>เมนู</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" color="b2">
+    <ion-button fill="clear" color="dark" size="large" (click)="gotocal()" >คำนวณสินค้า</ion-button>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotocalmon ()" >คำนวณเงิน</ion-button><br>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotopro()" >สินค้า</ion-button>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotohis()" >ประวัติการใช้งาน</ion-button>
+    <br>
+    <ion-button fill="clear" color="danger" size="large" expand="full" (click)="gotohome()" >ออกจากระบบ</ion-button>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="h1">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>ประวัติการใช้งาน</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content> 
+   <ion-grid>
+    <ion-col size="12" size-md="6" size-lg="6">
+      <ion-card class="ion-padding" color="b2" *ngFor="let r of result">
+       <ion-card-title>{{r.cal}}</ion-card-title>
+       <ion-card-title>{{r.resu}}</ion-card-title>
+      </ion-card>
+    </ion-col>
+   </ion-grid>
+  </ion-content>
+</div>

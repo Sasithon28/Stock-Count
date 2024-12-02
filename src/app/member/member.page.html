@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="h1">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>สมัครบัญชีผู้ใช้งาน</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-card class="ion-padding" color="h1">
+  <ion-item>
+    <ion-input placeholder="ผู้ใช้งาน" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" placeholder="รหัสผ่าน" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="password" placeholder="ยืนยันรหัสผ่าน" ></ion-input>
+  </ion-item>
+  <br>
+  <ion-button shape="round" expand="full" size="default" color="yes" (click)="gotomem2()">ยืนยัน</ion-button>
+
+ </ion-card>
+</ion-content>

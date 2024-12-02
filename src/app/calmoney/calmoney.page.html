@@ -1,0 +1,45 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="h1">
+      <ion-title>เมนู</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" color="b2">
+    <ion-button fill="clear" color="dark" size="large" (click)="gotocal()" >คำนวณสินค้า</ion-button>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotocalmon ()" >คำนวณเงิน</ion-button><br>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotopro()" >สินค้า</ion-button>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotohis()" >ประวัติการใช้งาน</ion-button>
+    <br>
+    <ion-button fill="clear" color="danger" size="large" expand="full" (click)="gotohome()" >ออกจากระบบ</ion-button>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="h1">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>คำนวนเงิน</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content> 
+   <ion-card class="ion-padding" color="h1">
+    <ion-item>
+      <ion-input type="number" placeholder="จำนวนคงเหลือ"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="number" placeholder="จำนวนคงสินค้า"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button shape="round" expand="full" size="default" color="b1">คำนวณ</ion-button>
+   </ion-card>
+   <br>
+    <ion-card color="re" class="ion-padding">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">ผลลัพธ์</ion-card-title>
+        <ion-card-subtitle class="ion-text-center">1234</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-content>
+</div>

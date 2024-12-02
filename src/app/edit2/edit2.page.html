@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="h1">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="product"></ion-back-button>
+    </ion-buttons>
+    <ion-title>แก้ไขสินค้า</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-label>
+    <h1><b>แก้ไขข้อมูลสินค้า</b></h1>
+  </ion-label>
+
+  <ion-input type="hidden" [(ngModel)]="product.id_product"></ion-input>
+  
+  <ion-item>
+    <ion-label position="floating">ชื่อสินค้า</ion-label>
+    <ion-input type="text" [(ngModel)]="product.product_name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">จำนวนสินค้า</ion-label>
+    <ion-input type="text" [(ngModel)]="product.quantity"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">ราคาสินค้า</ion-label>
+    <ion-input type="text" [(ngModel)]="product.price"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">ลิงค์ภาพสินค้า</ion-label>
+    <ion-input type="text" [(ngModel)]="product.product_photo"></ion-input>
+  </ion-item>
+  <br>
+
+  <div class="itemproduct">
+    <ion-button (click)="editProduct()">แก้ไขข้อมูล</ion-button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="h1">
+      <ion-title>เมนู</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" color="b2">
+    <ion-button fill="clear" color="dark" size="large" (click)="gotocal()">คำนวณสินค้า</ion-button>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotocalmon ()">คำนวณเงิน</ion-button><br>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotopro()">สินค้า</ion-button>
+    <ion-button fill="clear" color="dark" size="large" (click)="gotohis()">ประวัติการใช้งาน</ion-button>
+    <br>
+    <ion-button fill="clear" color="danger" size="large" expand="full" (click)="gotohome()">ออกจากระบบ</ion-button>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="h1">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>สินค้า</ion-title>
+      <ion-button slot="end" color="yes" (click)="gotoedit()">เพิ่มสินค้า</ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <ion-refresher slot="fixed" (ionFefresh)="loadDataPro()">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-grid *ngFor="let show of Product">
+      <ion-col size="12" size-md="6" size-lg="6" >
+        <ion-card class="ion-padding" color="h1">
+          <ion-row >
+            <ion-col>
+
+              <ion-img>{{show.product_phto}}</ion-img>
+
+            </ion-col>
+            <ion-col>
+              <div class="itemproduct , ion-padding">
+                <ion-item>{{show.product_name}}</ion-item>
+                <br>
+                <ion-item>{{show.quantity}}</ion-item>
+                <br>
+                <ion-item>{{show.price}}</ion-item>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-button (click)="delPro(show.id_product)" shape="round" size="default" color="danger"> ลบ </ion-button>
+          <ion-button  shape="round" size="default" color="yyy" (click)="edit(show)">แก้ไข</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-grid>
+  </ion-content>
+</div>
